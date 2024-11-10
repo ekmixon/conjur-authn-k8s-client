@@ -124,7 +124,7 @@ LABEL description="The authentication client required to expose secrets from a C
 
 # =================== CONTAINER FOR HELM TEST ===================
 
-FROM alpine:3.12 as k8s-cluster-test
+FROM alpine:3.20.3 as k8s-cluster-test
 
 # Install packages for testing
 RUN apk add --no-cache bash bind-tools coreutils curl git ncurses openssl
